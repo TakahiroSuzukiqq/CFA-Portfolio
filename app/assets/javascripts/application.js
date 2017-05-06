@@ -16,8 +16,26 @@
 //= require_tree .
 //= require materialize-sprockets
 
-(function($) {
-		$(function() {
-$(".dropdown-button").dropdown();
-		}); // End Document Ready
-})(jQuery); // End of jQuery name space
+// (function($) {
+// 		$(function() {
+// $(".dropdown-button").dropdown();
+// 		}); // End Document Ready
+// })(jQuery); // End of jQuery name space
+
+$(document).ready(function(){
+     $('.carousel').carousel({
+           dist:0,
+           shift:0,
+           padding:20,
+     });
+
+   });
+
+   $(document).ready(function(){
+      $('.collapsible').collapsible();
+    });
+
+
+$(document).ready(function(){
+     $('.slider').slider();
+   });

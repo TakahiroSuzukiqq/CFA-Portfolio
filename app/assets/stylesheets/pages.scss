@@ -1,3 +1,115 @@
 // Place all the styles related to the pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main {
+  width: 450px;
+  margin: 30px;
+}
+
+.intro{
+ margin-bottom: 8em;
+ // border-bottom: 5px solid ##00e2f2;
+}
+
+// #######################################################
+.circle_button{
+  margin-bottom: 4em;
+}
+// variables
+$fab-close-line-length: 1.64rem;
+$fab-close-line-thickness: 2px;
+$fab-close-animation-time: .3s;
+$fab-close-spins: 1;
+
+// button
+.fixed-action-btn{
+  &.spin-close{
+    .btn-large {
+      position: relative;
+      i {
+        opacity: 1;
+        transition: transform $fab-close-animation-time,
+      opacity $fab-close-animation-time;
+      }
+      &:before {
+        transition: transform $fab-close-animation-time,
+      opacity $fab-close-animation-time;
+        content: ' ';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: $fab-close-line-length;
+        height: $fab-close-line-thickness;
+        background: white;
+        margin-top: -2px;
+        margin-left: -$fab-close-line-length/2;
+        transform: rotate(0);
+        opacity: 0;
+
+      }
+      &:after {
+        transition: transform $fab-close-animation-time,
+      opacity $fab-close-animation-time;
+        content: ' ';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: $fab-close-line-length;
+        height: $fab-close-line-thickness;
+        background: white;
+        margin-top: -2px;
+        margin-left: -$fab-close-line-length/2;
+        transform: rotate(0);
+        opacity: 0;
+      }
+    }
+    &.active{
+      .btn-large{
+        i{
+          opacity: 0;
+        }
+        &:before{
+          opacity: 1;
+          transform: rotate(($fab-close-spins*2+1)*45deg);
+        }
+        &:after{
+          opacity: 1;
+          transform: rotate(($fab-close-spins*2+1)*135deg);
+        }
+      }
+    }
+  }
+}
+
+// #######################################################
+.slider .indicators .indicator-item {
+  background-color: #666666;
+  border: 3px solid #ffffff;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.slider .indicators .indicator-item.active {
+  background-color: #ffffff;
+}
+.slider {
+  width: 80%;
+  margin: 0 auto;
+}
+.slider .indicators {
+  bottom: 60px;
+  z-index: 100;
+  /* text-align: left; */
+}
+
+.jp_flag{
+  height: 40px;
+  width: 60px;
+  border: 1px solid #e6e6e6;
+	background: #fff;
+  -webkit-filter: grayscale(70%);
+  filter: grayscale(70%);
+}
+
+.space{margin-bottom: 7em;}

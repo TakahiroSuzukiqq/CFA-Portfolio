@@ -1,4 +1,187 @@
 <%= render 'partials/nav' %>
 
-<h1>Pages#index  Toggle like</h1>
-<p>Find me in app/views/pages/index.html.erb</p>
+
+<div class = "intro">
+  <div class="slider">
+     <ul class="slides">
+       <li>
+         <img src="https://images.pexels.com/photos/210012/pexels-photo-210012.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb">
+         <div class="caption center-align">
+           <h3>Having curiosity</h3>
+           <h5 class="light grey-text text-lighten-3">Try everything with passion</h5>
+         </div>
+       </li>
+       <li>
+          <img src="https://images.pexels.com/photos/312839/pexels-photo-312839.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb">
+          <!-- <img src="https://static.pexels.com/photos/158607/cairn-fog-mystical-background-158607.jpeg"> -->
+         <div class="caption left-align">
+           <h3>Continuous self growth</h3>
+           <h5 class="light grey-text text-lighten-3">Study hard, be patience</h5>
+         </div>
+       </li>
+       <li>
+         <img src="https://static.pexels.com/photos/116191/pexels-photo-116191.jpeg">
+         <div class="caption right-align">
+           <h3>Broaden horizons</h3>
+           <h5 class="light grey-text text-lighten-3">Explore unknown territory</h5>
+         </div>
+       </li>
+       <li>
+         <img src="https://images.pexels.com/photos/164037/pexels-photo-164037.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb">
+         <div class="caption center-align">
+           <h3>Challenge</h3>
+           <h5 class="light grey-text text-lighten-3">Take the new step</h5>
+         </div>
+       </li>
+     </ul>
+   </div>
+</div>
+
+
+<div class="row">
+  <div class="col l4 m12 s12">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <div class="main">
+       <div class="card">
+         <div class="card-image waves-effect waves-block waves-light">
+          <%= image_tag 'portfolio_img.png', class:"portfolio_img" %>
+         </div>
+         <div class="card-content">
+           <span class="card-title activator grey-text text-darken-4"><%= image_tag 'jp-flag.png', class:"jp_flag" %>Takahiro Suzuki<i class="material-icons right">more_vert</i></span>
+           <!-- <p><a href="#">This is a link</a></p> -->
+         </div>
+         <div class="card-reveal">
+           <span class="card-title grey-text text-darken-4">Takahiro Suzuki<i class="material-icons right">close</i></span>
+           <p>
+             January, 2017 - <br>
+             Student at Coder Factory Academy  Sydney, Australia <br><br>
+             April, 2013 - September, 2016 <br>
+             Work for Mitui Bussan Chemicals Co., Ltd.  Osaka, Japan <br><br>
+             April, 2009 - March, 2013 <br>
+             Student at Waseda University  Tokyo, Japan <br><br>
+             December, 1989 - <br>
+             born and raised in Tokyo, japan
+           </p>
+         </div>
+       </div>
+      </div>
+  </div>
+  <div class="col l8 m12 s12">
+    <div class="space">
+    </div>
+    <ul class="collapsible" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">work</i>3 year and 8 months</div>
+        <div class="collapsible-body">
+          <span>
+            As a sales representitive, Takahiro Suzuki has 3 year and 8 months working experience in a petrochemicals trading company.<br>
+            Used my skills in marketing, negotiation and problem solving to achieve more than 115% of my sales profit targets 3 years <br>
+            in a row while servicing a varied and diverse array of industries as a sales consultant employed by a petrochemicals trading company.
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">code</i>A shift</div>
+        <div class="collapsible-body">
+          <span>
+            Shifted the career as a software developer, during the period in Coderfactory Academy tasks
+            and the project has been completed.Applying skills such as Ruby, Ruby on rails, HTML, CSS and Javascript.
+          </span>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">language</i>Diversity</div>
+        <div class="collapsible-body">
+          <span>
+            Besides, having a background of Social science in university, experienced diversity of culture.
+        </span>
+      </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">perm_identity</i>Personality</div>
+        <div class="collapsible-body">
+          <span>
+            With passion and patience, created several project as a projexct leader in a petrochemicals trading company,<br>
+             such as the project exporting hundreds tons of amino acids to overseas country.<br>
+            Having spirits to challenge organized several tennis tournaments which participants were more than 1,000,<br>
+             as a manager of tennis event organization in university.<br>
+            More than 10 years of playing tennis as a hobby.<br>
+            Having curiousity, traveled South east Asia as a backpacker.
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class = "circle_button">
+  <div class="fixed-action-btn horizontal click-to-toggle spin-close">
+    <a class="btn-floating btn-large red">
+      <i class="material-icons">assignment_ind</i>
+    </a>
+    <ul>
+      <!-- <li><a class="btn-floating red"><i class="material-icons"></i></a></li> -->
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">perm_contact_calendar</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">assignment<a href="https://github.com/TakahiroSuzukiqq"></a></i></a></li>
+    </ul>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col l4 m12 s12">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <div class="main">
+       <div class="card">
+         <div class="card-image waves-effect waves-block waves-light">
+           <img class="activator" src="http://materializecss.com/images/office.jpg">
+         </div>
+         <div class="card-content">
+           <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+           <p><a href="#">This is a link</a></p>
+         </div>
+         <div class="card-reveal">
+           <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+           <p>Here is some more information about this product that is only revealed once clicked on.</p>
+         </div>
+       </div>
+      </div>
+    </div>
+  <div class="col l4 m12 s12">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <div class="main">
+       <div class="card">
+         <div class="card-image waves-effect waves-block waves-light">
+           <img class="activator" src="http://materializecss.com/images/office.jpg">
+         </div>
+         <div class="card-content">
+           <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+           <p><a href="#">This is a link</a></p>
+         </div>
+         <div class="card-reveal">
+           <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+           <p>Here is some more information about this product that is only revealed once clicked on.</p>
+         </div>
+       </div>
+      </div>
+    </div>
+    <div class="col l4 m12 s12">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <div class="main">
+         <div class="card">
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator" src="http://materializecss.com/images/office.jpg">
+           </div>
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
+             <p><a href="#">This is a link</a></p>
+           </div>
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+             <p>Here is some more information about this product that is only revealed once clicked on.</p>
+           </div>
+         </div>
+        </div>
+      </div>
+</div>
