@@ -22,6 +22,10 @@
 // 		}); // End Document Ready
 // })(jQuery); // End of jQuery name space
 
+// #######
+// #######
+
+
 $(document).ready(function(){
      $('.carousel').carousel({
            dist:0,

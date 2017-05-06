@@ -14,7 +14,7 @@
  *= require_self
  */
  @import "materialize/components/color";
- $primary-color: color("blue", "lighten-2") !default;
+ $primary-color: color("brown", "darken-1") !default;
  @import 'materialize';
 
 body{padding: 60px 80px;}
