@@ -2,7 +2,7 @@
 
 # Portfolio2  
   This is actually my 2nd portfolio.  
-  (my 1st portfolio : https://github.com/TakahiroSuzukiqq/CFA-portfolio#readme )  
+  [my 1st portfolio](https://github.com/TakahiroSuzukiqq/CFA-ProjectNo1-portfolio)  
 　 This portfolio was made with the intention to keep it simple.  
 
 # Function  
