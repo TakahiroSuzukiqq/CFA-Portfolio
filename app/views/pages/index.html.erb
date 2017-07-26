@@ -1,8 +1,40 @@
-<div class="nav-bar">
-  <%= render 'partials/nav' %>
+<div class="partial-sidenav">
+  <%= render 'partials/side-nav' %>
 </div>
 <br>
 
+ <!-- takahiro suzuki introduction -->
+<div class="row">
+  <div class="col l4 m12 s12">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <div class="main">
+       <div class="card">
+         <div class="card-image waves-effect waves-block waves-light">
+          <%= image_tag 'portfolio_img.png', class:"portfolio_img" %>
+         </div>
+         <div class="card-content">
+           <span class="card-title activator grey-text text-darken-4"><%= image_tag 'jp-flag.png', class:"jp_flag" %>Takahiro Suzuki<i class="material-icons right">more_vert</i></span>
+           <!-- <p><a href="#">This is a link</a></p> -->
+         </div>
+         <div class="card-reveal">
+           <span class="card-title grey-text text-darken-4">Takahiro Suzuki<i class="material-icons right">close</i></span>
+           <p>
+             January, 2017 - <br>
+             Student at Coder Factory Academy  Sydney, Australia <br><br>
+             April, 2013 - September, 2016 <br>
+             Work for Mitui Bussan Chemicals Co., Ltd.  Osaka, Japan <br><br>
+             April, 2009 - March, 2013 <br>
+             Student at Waseda University  Tokyo, Japan <br><br>
+             December, 1989 - <br>
+             born and raised in Tokyo, japan
+           </p>
+         </div>
+       </div>
+      </div>
+  </div>
+
+  <!-- 4 key words -->
+  <div class="col l4 m12 s12">
 <div class = "intro">
   <div class="slider">
      <ul class="slides">
@@ -38,37 +70,10 @@
      </ul>
    </div>
 </div>
+</div>
 
-
-<div class="row">
-  <div class="col l6 m12 s12">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <div class="main">
-       <div class="card">
-         <div class="card-image waves-effect waves-block waves-light">
-          <%= image_tag 'portfolio_img.png', class:"portfolio_img" %>
-         </div>
-         <div class="card-content">
-           <span class="card-title activator grey-text text-darken-4"><%= image_tag 'jp-flag.png', class:"jp_flag" %>Takahiro Suzuki<i class="material-icons right">more_vert</i></span>
-           <!-- <p><a href="#">This is a link</a></p> -->
-         </div>
-         <div class="card-reveal">
-           <span class="card-title grey-text text-darken-4">Takahiro Suzuki<i class="material-icons right">close</i></span>
-           <p>
-             January, 2017 - <br>
-             Student at Coder Factory Academy  Sydney, Australia <br><br>
-             April, 2013 - September, 2016 <br>
-             Work for Mitui Bussan Chemicals Co., Ltd.  Osaka, Japan <br><br>
-             April, 2009 - March, 2013 <br>
-             Student at Waseda University  Tokyo, Japan <br><br>
-             December, 1989 - <br>
-             born and raised in Tokyo, japan
-           </p>
-         </div>
-       </div>
-      </div>
-  </div>
-  <div class="col l6 m12 s12">
+ <!-- brief intro -->
+  <div class="col l4 m12 s12">
     <div class="space">
     </div>
     <ul class="collapsible" data-collapsible="accordion">
@@ -131,7 +136,14 @@
 </div> -->
 <br>
 <br>
-<h3>Apps</h3>
+
+<!--###-->
+<div class="partial-background">
+  <%= render 'partials/background' %>
+</div>
+<!--###-->
+
+<h3>Major past work</h3>
 <br>
 <br>
 
@@ -141,18 +153,18 @@
       <div class="main">
        <div class="card">
          <div class="card-image waves-effect waves-block waves-light">
-           <img class="activator" src="https://image.ibb.co/fNvzqk/githublogofe.png">
+           <img class="activator" src="https://image.ibb.co/md0J25/cfa_mac.png">
          </div>
          <div class="card-content">
-           <span class="card-title activator grey-text text-darken-4">Fair trade app<i class="material-icons right">more_vert</i></span>
-           <p><a href="https://github.com/TakahiroSuzukiqq/CFA-ProjectNo2">Github</a></p>
+           <span class="card-title activator grey-text text-darken-4">CFA-Macs-secret-menu app<i class="material-icons right">more_vert</i></span>
+           <p><a href="https://github.com/TakahiroSuzukiqq/CFA-Mac-secret-menu">Github</a></p>
          </div>
          <div class="card-reveal">
            <span class="card-title grey-text text-darken-4">Fair enough<i class="material-icons right">close</i></span>
            <p>
-             Encourage people to join fair trade and aim at creating international community.
-             Encourage raw supplers such as clothes, cotton, cacao, coffee to join the community.
-             Supplier can sell products via this app, and user can buy products via this app.
+             Backend : Node.js  
+             Frontend : REACT  
+             Database : MLAB (MongoDB)  
            </p>
          </div>
        </div>
@@ -166,7 +178,7 @@
            <img class="activator" src="https://preview.ibb.co/imxmkQ/airbnb_app.jpg">
          </div>
          <div class="card-content">
-           <span class="card-title activator grey-text text-darken-4">Airbnb app<i class="material-icons right">more_vert</i></span>
+           <span class="card-title activator grey-text text-darken-4">CFA-Airbnb app<i class="material-icons right">more_vert</i></span>
            <p><a href="https://github.com/TakahiroSuzukiqq/CFA-Airbnb-airtns-">Github</a></p>
          </div>
          <div class="card-reveal">
@@ -188,11 +200,11 @@
              <img class="activator" src="https://image.ibb.co/fnwU5Q/atm_app.jpg" >
            </div>
            <div class="card-content">
-             <span class="card-title activator grey-text text-darken-4">ATM app<i class="material-icons right">more_vert</i></span>
+             <span class="card-title activator grey-text text-darken-4">CFA-ATM-Terminal app<i class="material-icons right">more_vert</i></span>
              <p><a href="https://github.com/TakahiroSuzukiqq/CFA-ATM-terminal-app">Github</a></p>
            </div>
            <div class="card-reveal">
-             <span class="card-title grey-text text-darken-4">CFA-ATM-Terminal app<i class="material-icons right">close</i></span>
+             <span class="card-title grey-text text-darken-4">ATM Terminal app<i class="material-icons right">close</i></span>
              <p>
               This is the first application which I made. <br>
               You can either withdraw or deposit money and check current ballance.
@@ -204,12 +216,179 @@
 </div>
 
 <br>
+
+<!-- major project -->
+<div class="row">
+  <div class="col l4 m12 s12">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <div class="main">
+       <div class="card">
+         <div class="card-image waves-effect waves-block waves-light">
+           <img class="activator" src="https://image.ibb.co/hS8yfQ/Screen_Shot_2017_07_20_at_23_40_27.png">
+         </div>
+         <div class="card-content">
+           <span class="card-title activator grey-text text-darken-4">CFA-Project-No1<i class="material-icons right">more_vert</i></span>
+           <p><a href="https://github.com/TakahiroSuzukiqq/CFA-ProjectNo1-portfolio">Github</a></p>
+         </div>
+         <div class="card-reveal">
+           <span class="card-title grey-text text-darken-4">Ruby on Rails Portfolio<i class="material-icons right">close</i></span>
+           <p>
+            Coming soon
+           </p>
+         </div>
+       </div>
+      </div>
+    </div>
+   <div class="col l4 m12 s12">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <div class="main">
+       <div class="card">
+         <div class="card-image waves-effect waves-block waves-light">
+           <img class="activator" src="https://image.ibb.co/fNvzqk/githublogofe.png">
+         </div>
+         <div class="card-content">
+           <span class="card-title activator grey-text text-darken-4">CFA-Project-No2<i class="material-icons right">more_vert</i></span>
+           <p><a href="https://github.com/TakahiroSuzukiqq/CFA-ProjectNo2">Github</a></p>
+         </div>
+         <div class="card-reveal">
+           <span class="card-title grey-text text-darken-4">Ruby on Rails Fair trade app<i class="material-icons right">close</i></span>
+           <p>
+             Encourage people to join fair trade and aim at creating international community.
+             Encourage raw supplers such as clothes, cotton, cacao, coffee to join the community.
+             Supplier can sell products via this app, and user can buy products via this app.
+           </p>
+         </div>
+       </div>
+      </div>
+    </div>
+    <div class="col l4 m12 s12">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <div class="main">
+         <div class="card">
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator" src="https://image.ibb.co/nyapTF/Screen_Shot_2017_06_08_at_10_10_58.png" >
+           </div>
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4">CFA-Project-No3<i class="material-icons right">more_vert</i></span>
+             <p><a href="https://github.com/TakahiroSuzukiqq/CFA-Project-No3-nodejs-f-">Github</a></p>
+           </div>
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">Node.js & REACT Questionnaire app<i class="material-icons right">close</i></span>
+             <p>
+             Backend : Node.js  
+             Frontend : REACT  
+             Database : MLAB (MongoDB)  
+             </p>
+           </div>
+         </div>
+        </div>
+      </div>
+</div>
+
+<div class="row">
+  <div class="col l4 m12 s12">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <div class="main">
+       <div class="card">
+         <div class="card-image waves-effect waves-block waves-light">
+           <img class="activator" src="https://image.ibb.co/hvTsN5/Amazon_Web_Services.png">
+         </div>
+         <div class="card-content">
+           <span class="card-title activator grey-text text-darken-4">Amazon Machine Learning app<i class="material-icons right">more_vert</i></span>
+           <p><a href="https://github.com/TakahiroSuzukiqq/AWS-ML-BinaryC">Github</a></p>
+         </div>
+         <div class="card-reveal">
+           <span class="card-title grey-text text-darken-4">Binary classification Machine Learning app<i class="material-icons right">close</i></span>
+           <p>
+            Keywords : Nodejs, AMAZON WEB SERVICES (AWS), AWS MACHINE LEARNING, POSTMAN, API
+           </p>
+         </div>
+       </div>
+      </div>
+    </div>
+   <div class="col l4 m12 s12">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <div class="main">
+       <div class="card">
+         <div class="card-image waves-effect waves-block waves-light">
+           <img class="activator" src="https://image.ibb.co/bKeE9k/Screen_Shot_2017_07_26_at_18_36_07.png">
+         </div>
+         <div class="card-content">
+           <span class="card-title activator grey-text text-darken-4">Machine Learning terminal app<i class="material-icons right">more_vert</i></span>
+           <p><a href="https://github.com/TakahiroSuzukiqq/MachineLearning-TerminalApp">Github</a></p>
+         </div>
+         <div class="card-reveal">
+           <span class="card-title grey-text text-darken-4">Nodejs Machine Learning terminal app<i class="material-icons right">close</i></span>
+           <p>
+             Coming soon
+           </p>
+         </div>
+       </div>
+      </div>
+    </div>
+    <div class="col l4 m12 s12">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <div class="main">
+         <div class="card">
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator" src="https://preview.ibb.co/minALF/Screen_Shot_2017_07_13_at_21_36_31.png" >
+           </div>
+           <div class="card-content">
+             <span class="card-title activator grey-text text-darken-4">Ionic Github search app<i class="material-icons right">more_vert</i></span>
+             <p><a href="https://github.com/TakahiroSuzukiqq/angular2-ionic">Github</a></p>
+           </div>
+           <div class="card-reveal">
+             <span class="card-title grey-text text-darken-4">first Ionic & Angular app<i class="material-icons right">close</i></span>
+             <p>
+               Coming soon
+             </p>
+           </div>
+         </div>
+        </div>
+      </div>
+</div>
+
+<!--###-->
+<!-- Modal Trigger -->
+<!--  <a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a> -->
+
+  <!-- Modal Structure -->
+<!--  <div id="modal1" class="modal">-->
+    <!--<div class="modal-content">-->
+      <!--<h4>Modal Header</h4>-->
+      <!--<p>A bunch of text</p>-->
+    <!--</div>-->
+    <!--<div class="modal-footer">-->
+      <!--<a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>-->
+    <!--</div>-->
+  <!--</div>-->
+<!--###-->
+
 <br>
+<br>
+
+<!--###-->
+<div class="partial-background">
+  <%= render 'partials/background' %>
+</div>
+<!--###-->
+
 <h3>Group challenges</h3>
+
+<!--###-->
+<div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="https://image.ibb.co/khetX5/continuous_s_g.jpg" class="sa"></a>
+    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/800/800/nature/2"></a>
+    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/800/800/nature/3"></a>
+    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/800/800/nature/4"></a>
+    <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/800/800/nature/5"></a>
+  </div>
+<!--###-->
+
 <br>
 <br>
 <div class="row">
-  <div class="col l4 m12 s12 offset-s4">
+  <div class="col l4 m12 s12">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <div class="main">
        <div class="card">
@@ -232,7 +411,7 @@
        </div>
       </div>
     </div>
-  <div class="col l4 m12 s12 ">
+  <div class="col l4 m12 s12">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <div class="main">
        <div class="card">
@@ -255,3 +434,9 @@
       </div>
     </div>
 </div>
+
+<!--###-->
+<div class="partial-background">
+  <%= render 'partials/background' %>
+</div>
+<!--###-->

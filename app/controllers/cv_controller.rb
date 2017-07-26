@@ -1,0 +1,2 @@
+class CvController < ApplicationController
+end
