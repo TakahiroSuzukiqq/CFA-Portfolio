@@ -3,11 +3,21 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .nav-bar{
-  margin-bottom: 4em;
+  //margin-bottom: 4em;
 }
 
+.nav-brand-logo{
+  font-size: 40px;
+  margin-left: 50px;
+}
+
+.right.hide-on-med-and-down{
+  margin-right: 50px;
+}
+
+
 .parallax{
-  height: 100px;
+  height: 80px;
 }
 
 .main {
@@ -24,7 +34,7 @@
 // }
 
 .intro{
- padding: 60px 80px;
+ //padding: 60px 80px;
  margin-bottom: 8em;
  // border-bottom: 5px solid ##00e2f2;
 }
