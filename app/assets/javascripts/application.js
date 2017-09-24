@@ -44,6 +44,7 @@ $(document).ready(function(){
     $('#modal1').modal('close');
   });
 
+
 //     // Next slide
 // $('.carousel').carousel('next');
 // $('.carousel').carousel('next', 3); // Move next n times.
@@ -77,3 +78,5 @@ $(document).ready(function(){
      $('.slider').slider();
    });
 
+// // Materialize.toast(message, displayLength, className, completeCallback);
+//   Materialize.toast('I am a toast!', 4000) // 4000 is the duration of the toast
